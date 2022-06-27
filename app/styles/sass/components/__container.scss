@@ -1,0 +1,8 @@
+/*components*/
+
+.container {
+    max-width: calc(var(--wrapper-width) + var(--mobile-padding) * 2);
+    padding-left: var(--mobile-padding);
+    padding-right: var(--mobile-padding);
+    margin: 0 auto;
+}

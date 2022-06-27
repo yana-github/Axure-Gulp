@@ -1,0 +1,124 @@
+/*prices*/
+
+.prices {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    background: #F5F5F5;
+    text-align: center;
+
+    @media (max-width: 992px) {
+        padding-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 20px;
+    }
+
+    @media (max-width: 560px) {
+        padding-top: 0;
+    }
+
+    &__row {
+        align-items: center;
+
+    }
+
+    &__card {
+        text-align: center;
+        margin-top: 60px;
+
+        @media (max-width: 1200px) {
+            margin-top: 32px;
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 28px;
+        }
+
+        @media (max-width: 560px) {
+            margin-top: 24px;
+        }
+
+        &-list li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        &-title {
+            font-family: 'Open Sans';
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 33px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            height: 60px;
+            background: var(--bg-black);
+            border: 2px solid #F5F5F5;
+
+            @media (max-width: 560px) {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+
+        &-cost {
+            font-family: 'Raleway';
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 42px;
+            color: #FFFFFF;
+            background: var(--bg-black);
+            height: 100px;
+
+            @media (max-width: 560px) {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+
+        &-more {
+            height: 50px;
+            background: var(--bg-black);
+            border: 2px solid #F5F5F5;
+            font-family: 'Raleway';
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            color: rgba(255, 255, 255, 0.5);
+
+            @media (max-width: 560px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+
+
+        &-option {
+            height: 50px;
+            background: #FFFFFF;
+            border: 2px solid #F5F5F5;
+            font-family: 'Raleway';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #86878B;
+
+            @media (max-width: 560px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+
+        &--active {
+            position: relative;
+            transform: translatey(-5%);
+
+            @media (max-width: 992px) {
+                transform: none;
+            }
+        }
+    }
+}
