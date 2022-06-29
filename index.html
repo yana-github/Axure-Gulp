@@ -21,8 +21,8 @@
     <header class="header">
         <div class="header__inner container">
             <div class="header__logo col-6">
-                <a class="logo__link" href="#"><img class="logo__img" src="/app/images/src/header/logo.svg"
-                        alt="axit-logo"></a>
+                <a href="#" class="logo__link"> <img src="/app/images/src/header/logo.svg" class="logo__img" alt="axit-logo">
+                </a>
             </div>
             <nav class="header__nav row">
                 <ul class="header__nav-list col-6">
@@ -122,14 +122,16 @@
 
     <!-- Tabs NEW-->
 
+
     <section class="tabs">
         <div class="container">
-            <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'Tab 1')" id="defaultOpen">Tab 1</button>
-                <button class="tablinks" onclick="openTab(event, 'Tab 2')">Tab 2</button>
-                <button class="tablinks" onclick="openTab(event, 'Tab 3')">Tab 3</button>
-            </div>
-            <div id="Tab 1" class="tabcontent">
+            <div class="tabs__nav col-6">
+                <button class="tabs__btn tabs__btn_active">Tab 1</button>
+                <button class="tabs__btn">Tab 2</button>
+                <button class="tabs__btn">Tab 3</button>
+              </div>
+              <div class="tabs__content">
+                <div class="tabs__pane tabs__pane_show">
                     <div class="tab__info__row row">
                         <div class="tabs__head col-7 col-md-12">
                             <p class="tabs__head-title" id="nav-features">Tabs with soft transitioning effect.</p>
@@ -146,7 +148,7 @@
                 </div>
             </div>
 
-            <div id="Tab 2" class="tabcontent">
+            <div class="tabs__pane">
             <div class="tab__info__row row">
                 <div class="tabs__head col-7 col-md-12">
                     <p class="tabs__head-title">Tabs with soft transitioning effect.</p>
@@ -163,7 +165,7 @@
                     </div>
                 </div>
 
-                <div id="Tab 3" class="tabcontent">
+               <div class="tabs__pane" id="content-3">
             <div class="tab__info__row row">
                 <div class="tabs__head col-7 col-md-12">
                     <p class="tabs__head-title">Tabs with soft transitioning effect.</p>
@@ -180,6 +182,7 @@
                     </div>
                 </div>
         </div>
+    </div>
     </section>
 
     <!-- About -->
