@@ -5,9 +5,29 @@
     background: transparent;
     padding: 0;
     border: none;
-}
 
-    .burger_closed {
+    &__line {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        transition: 0.3s;
+
+        &:first-child {
+            top: 0;
+        }
+    
+        &:nth-child(2) {
+            top: calc(50% - 1.5px);
+        }
+    
+        &:last-child {
+            bottom: 0;
+        }
+    }
+
+    &_closed {
 
         .burger__line:nth-child(2) {
             opacity: 0;
@@ -24,23 +44,4 @@
         }
     }
 
-    .burger__line {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        background: #fff;
-        transition: 0.3s;
-    }
-
-    .burger__line:first-child {
-        top: 0;
-    }
-
-    .burger__line:nth-child(2) {
-        top: calc(50% - 1.5px);
-    }
-
-    .burger__line:last-child {
-        bottom: 0;
-    }
+}
