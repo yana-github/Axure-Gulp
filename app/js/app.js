@@ -3,7 +3,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	// Custom JS
+	// tabs
 	class ItcTabs {
 		constructor(target, config) {
 			const defaultConfig = {};
@@ -51,23 +51,38 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 		}
 	}
-
 	new ItcTabs('.tabs');
 
+	// burger
 
-	// mobile menu
-	
-	const headerBurger = document.querySelector(".header__burger");
-	const headerNav = document.querySelector(".header__nav");
-
-	headerBurger.addEventListener('click', function () {
-		headerBurger.classList.toggle("burger__closed");
-		headerNav.classList.toggle("header__nav_opened");
+	document.getElementById("burger-menu").addEventListener("click", (event) => {
+		if (event.currentTarget.classList.contains("open")) {
+			event.currentTarget.classList.remove("open");
+		} else {
+			event.currentTarget.classList.add("open");
+		}
 	});
 
+	//slider
+	new Splide('.splide', {
+		type: 'splide',
+		perPage: 3,
+		breakpoints: {
+			768: {
+				perPage: 2,
+			},
+			560: {
+				perPage: 1,
+			},
+		},
+		gap: '1rem',
+		classes: {
+			arrows: 'splide__arrows review-slider__arrows',
+			arrow: 'splide__arrow review-slider__arrow',
+			prev: 'splide__arrow--prev review-slider__arrow-prev',
+			next: 'splide__arrow--next review-slider__arrow-next',
+		},
+	}).mount();
 
-});
 
-
-
-
+})
