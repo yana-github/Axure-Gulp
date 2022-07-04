@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// burger
 
-	document.getElementById("burger-menu").addEventListener("click", (event) => {
+	document.getElementById("burger__menu").addEventListener("click", (event) => {
 		if (event.currentTarget.classList.contains("open")) {
 			event.currentTarget.classList.remove("open");
 		} else {
